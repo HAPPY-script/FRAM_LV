@@ -957,7 +957,7 @@ spawn(function()
 
         -- Kiểm tra vị trí farm
         local hrp = player.Character and player.Character:FindFirstChild("HumanoidRootPart")
-        if hrp and (hrp.Position - zone.FarmPos).Magnitude > 2000 then
+        if hrp and (hrp.Position - zone.FarmPos).Magnitude > 1000 then
             tweenTo(zone.FarmPos + Vector3.new(0, 3, 0))
         end
 
